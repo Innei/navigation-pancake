@@ -17,6 +17,7 @@ specifiers:
   prettier: 2.3.2
   react: 17.0.2
   react-dom: 17.0.2
+  swr: ^0.5.6
   tailwindcss: 2.2.7
   typescript: 4.3.5
   vite: 2.5.0
@@ -27,6 +28,7 @@ specifiers:
 dependencies:
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  swr: 0.5.6_react@17.0.2
 
 devDependencies:
   '@types/react': 17.0.18
@@ -860,6 +862,11 @@ packages:
   /defined/1.0.0:
     resolution: {integrity: sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM=}
     dev: true
+
+  /dequal/2.0.2:
+    resolution: {integrity: sha512-q9K8BlJVxK7hQYqa6XISGmBZbtQQWVXSrRrWreHC94rMt1QL/Impruc+7p2CYSYuVIUr+YCt6hjrs1kkdJRTug==}
+    engines: {node: '>=6'}
+    dev: false
 
   /detective/5.2.0:
     resolution: {integrity: sha512-6SsIx+nUUbuK0EthKjv0zrdnajCCXVYGmbYYiYjFVpzcjwEs/JMDZ8tPRG29J/HhN56t3GJp2cGSWDRjjot8Pg==}
@@ -2146,6 +2153,15 @@ packages:
     dependencies:
       has-flag: 4.0.0
     dev: true
+
+  /swr/0.5.6_react@17.0.2:
+    resolution: {integrity: sha512-Bmx3L4geMZjYT5S2Z6EE6/5Cx6v1Ka0LhqZKq8d6WL2eu9y6gHWz3dUzfIK/ymZVHVfwT/EweFXiYGgfifei3w==}
+    peerDependencies:
+      react: ^16.11.0 || ^17.0.0
+    dependencies:
+      dequal: 2.0.2
+      react: 17.0.2
+    dev: false
 
   /table/6.7.1:
     resolution: {integrity: sha512-ZGum47Yi6KOOFDE8m223td53ath2enHcYLgOCjGr5ngu8bdIARQk6mN/wRMv4yMRcHnCSnHbCEha4sobQx5yWg==}
