@@ -1,0 +1,42 @@
+.input-bar {
+  line-height: 1.5;
+  width: 100%;
+  border-radius: 48px;
+  box-shadow: var(--shadow);
+  border: 0;
+  outline: none;
+  padding: 12px 3.3rem;
+  font-size: 1rem;
+  transition: box-shadow 0.5s;
+}
+
+.input-bar:hover {
+  box-shadow: var(--shadow-thick);
+}
+.prefix-icon,
+.search-icon {
+  @apply absolute top-1/2 h-4 w-4;
+
+  transform: translateY(-50%);
+}
+
+.prefix-icon {
+  left: 1.3rem;
+
+  @apply flex items-center justify-center;
+
+  :global {
+    .iconfont {
+      @apply !text-lg;
+    }
+  }
+}
+.search-icon {
+  right: 1.3rem;
+
+  @apply cursor-pointer;
+}
+
+.input-bar-wrap {
+  position: relative;
+}

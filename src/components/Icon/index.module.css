@@ -1,0 +1,39 @@
+.icon {
+  @apply h-[30px] w-[30px];
+
+  :global {
+    & .xicons {
+      @apply h-[30px] w-[30px];
+    }
+  }
+}
+.icon-outter {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon-name {
+  @apply mt-[12px] text-sm text-gray-700;
+}
+
+.icon-wrap {
+  display: inline-block;
+  margin: 24px;
+  text-align: center;
+
+  :global {
+    .i-ico,
+    .xicons > svg {
+      transition: transform 0.5s;
+    }
+
+    :hover .i-ico,
+    :hover .xicons > svg {
+      transform: scale(1.3);
+    }
+  }
+}

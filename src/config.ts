@@ -1,16 +1,19 @@
 import { IconProps } from './components/Icon'
+import { Icon } from '@ricons/utils'
+import Google from '@ricons/fa/Google'
+import Twitter from '@ricons/fa/Twitter'
 
 export const UrlList: IconProps[] = [
   {
     name: 'Google',
     url: 'https://google.com',
-    icon: null,
+    icon: Google,
     backgroundColor: '#F8BA3C',
   },
   {
     name: 'Twitter',
     url: 'https://twitter.com',
-    icon: null,
+    icon: Twitter,
     backgroundColor: '#42A4ED',
   },
   {

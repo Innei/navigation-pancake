@@ -1,6 +1,15 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@ricons/antd': ^0.11.0
+  '@ricons/carbon': ^0.11.0
+  '@ricons/fa': ^0.11.0
+  '@ricons/fluent': ^0.11.0
+  '@ricons/ionicons4': ^0.11.0
+  '@ricons/ionicons5': ^0.11.0
+  '@ricons/material': ^0.11.0
+  '@ricons/tabler': ^0.11.0
+  '@ricons/utils': ^0.1.4
   '@types/react': 17.0.18
   '@types/react-dom': 17.0.9
   '@typescript-eslint/eslint-plugin': 4.29.2
@@ -31,6 +40,15 @@ dependencies:
   swr: 0.5.6_react@17.0.2
 
 devDependencies:
+  '@ricons/antd': 0.11.0
+  '@ricons/carbon': 0.11.0
+  '@ricons/fa': 0.11.0
+  '@ricons/fluent': 0.11.0
+  '@ricons/ionicons4': 0.11.0
+  '@ricons/ionicons5': 0.11.0
+  '@ricons/material': 0.11.0
+  '@ricons/tabler': 0.11.0
+  '@ricons/utils': 0.1.4_react-dom@17.0.2+react@17.0.2
   '@types/react': 17.0.18
   '@types/react-dom': 17.0.9
   '@typescript-eslint/eslint-plugin': 4.29.2_b01b7137116ac50f0745961d9cf72d34
@@ -302,6 +320,10 @@ packages:
     resolution: {integrity: sha512-RpfLEtTlyIxeNPGKcokS+p3BZII/Q3bYxryFRglh5H3A3T8q9fsLYm72VYAMEOOIBLEa8o93kFLiBDUWKrwXZA==}
     dev: true
 
+  /@emotion/hash/0.8.0:
+    resolution: {integrity: sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==}
+    dev: true
+
   /@eslint/eslintrc/0.4.3:
     resolution: {integrity: sha512-J6KFFz5QCYUJq3pf0mjEcCJVERbzv71PUIDczuh9JkwGEzced6CO5ADLHB1rbf/+oPBtoPfMYNOpGDzCANlbXw==}
     engines: {node: ^10.12.0 || >=12.0.0}
@@ -355,6 +377,49 @@ packages:
       fastq: 1.11.1
     dev: true
 
+  /@ricons/antd/0.11.0:
+    resolution: {integrity: sha512-2AYumGx78SKBc6UXqRvBUJ5njT3j9MXBpgkaFBdo/QkmxmHFtV1Tmqr6gSCS4FDuBmvE7KaoPpBdnq8rj/oDNQ==}
+    dev: true
+
+  /@ricons/carbon/0.11.0:
+    resolution: {integrity: sha512-XU9h8C/Z79d59krEtn0y9i3Q4zDI4sNJflIu3hxd/zGlFHrXfVvNfkdhk7ieS11ug/BPiiT56VoKvVYOWEuL0A==}
+    dev: true
+
+  /@ricons/fa/0.11.0:
+    resolution: {integrity: sha512-TzQD0dxtwT1V3QKnUnMT7so5NEAp15TEcUPQBr09pNmNqb83e+doGOsmAoZbGIl1Wia35UBECXIiXncTctj3UQ==}
+    dev: true
+
+  /@ricons/fluent/0.11.0:
+    resolution: {integrity: sha512-x/Qy8byiE22rz9YpH1oy8hIo3CrMtXvjGIAxXTghry/MD8RzCHA8xfapCdRwZQqpBf1Yx6lw+ryIhYCtHBDnbw==}
+    dev: true
+
+  /@ricons/ionicons4/0.11.0:
+    resolution: {integrity: sha512-NsOIN6xO5S551JS2HBUD9Jiqs4PYPHH3ptbQhOz/JOfe47xavqPLWJx32OJy5gWKlJRKsI5SNUUVHVosuPKk3w==}
+    dev: true
+
+  /@ricons/ionicons5/0.11.0:
+    resolution: {integrity: sha512-W4DcPGms5h2TJwmuqeSStpj/L6KrZXkzScyo5dkwRFdxg18F2DUoCefbcxJoX3udT6xPpmEydbd9+tYJqefrSQ==}
+    dev: true
+
+  /@ricons/material/0.11.0:
+    resolution: {integrity: sha512-y6nkGIe24Qsz2uW9+xIaQsQkH6bwa5uQESCsFFI9LvTHXZTfm9Xl6fP8SiqTtJjhzRu2H4W1QRDIrh1aaDgEUw==}
+    dev: true
+
+  /@ricons/tabler/0.11.0:
+    resolution: {integrity: sha512-V4We0VTSAdifCJxlq+4r+UFiIYsNDwL8uVAeI3rt2yB/DBW4bY86jA2U+GqhJc6v5+TYfof8lrWUnCy4wFVUlg==}
+    dev: true
+
+  /@ricons/utils/0.1.4_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-Rayyvggta7jeAwixvx30J521JDTrsk9KHKt0YpYnvnJFPNb5Du5ELZs3DQUI9sd63fPZ3kxvaRDsOm6BF00gjQ==}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@xicons/utils': 0.1.4
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: true
+
   /@rollup/pluginutils/4.1.1:
     resolution: {integrity: sha512-clDjivHqWGXi7u+0d2r2sBi4Ie6VLEAzWMIkvJLnDmxoOhBYOTfzGbOQBA32THHm11/LiJbd01tJUpJsbshSWQ==}
     engines: {node: '>= 8.0.0'}
@@ -365,6 +430,10 @@ packages:
 
   /@types/json-schema/7.0.9:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
+    dev: true
+
+  /@types/node/14.14.45:
+    resolution: {integrity: sha512-DssMqTV9UnnoxDWu959sDLZzfvqCF0qDNRjaWeYSui9xkFe61kKo4l1TWNTQONpuXEm+gLMRvdlzvNHBamzmEw==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -509,6 +578,12 @@ packages:
       react-refresh: 0.10.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@xicons/utils/0.1.4:
+    resolution: {integrity: sha512-uXxKDLz9abr80yJC05XSTq6wlyFcdW+N/1IYJkeHjzzXVc4VQ0sEYMoMMTjAH7HQBOyOkzOB4pf5NGF72lwa8Q==}
+    dependencies:
+      css-render: 0.13.9
     dev: true
 
   /acorn-jsx/5.3.2_acorn@7.4.1:
@@ -827,6 +902,14 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+    dev: true
+
+  /css-render/0.13.9:
+    resolution: {integrity: sha512-n3C4ZH59rveBrUlAD7n0Ze9/gUMKa4dlH1C9CWKpGcIHR/xRcIVXzBGy1iw8WWq2ySmn2/ZqOpySQNAK5Pb6sw==}
+    dependencies:
+      '@emotion/hash': 0.8.0
+      '@types/node': 14.14.45
+      csstype: 3.0.8
     dev: true
 
   /css-unit-converter/1.1.2:

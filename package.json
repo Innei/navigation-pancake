@@ -28,6 +28,15 @@
     "swr": "^0.5.6"
   },
   "devDependencies": {
+    "@ricons/antd": "^0.11.0",
+    "@ricons/carbon": "^0.11.0",
+    "@ricons/fa": "^0.11.0",
+    "@ricons/fluent": "^0.11.0",
+    "@ricons/ionicons4": "^0.11.0",
+    "@ricons/ionicons5": "^0.11.0",
+    "@ricons/material": "^0.11.0",
+    "@ricons/tabler": "^0.11.0",
+    "@ricons/utils": "^0.1.4",
     "@types/react": "17.0.18",
     "@types/react-dom": "17.0.9",
     "@typescript-eslint/eslint-plugin": "4.29.2",
