@@ -20,7 +20,8 @@ import { Icon as RIcon } from '@ricons/utils'
 import SettingOutlined from '@ricons/antd/es/SettingOutlined'
 import 'react-grid-layout/css/styles.css'
 import 'react-resizable/css/styles.css'
-import GridLayout from 'react-grid-layout'
+import { WidthProvider, Responsive } from 'react-grid-layout'
+const ResponsiveReactGridLayout = WidthProvider(Responsive)
 
 const UrlListMap = new Map(UrlList.map((item) => [item.name, item]))
 const UrlListAllName = UrlList.map((item) => item.name)
@@ -87,32 +88,46 @@ export const HomePage: FC = () => {
             </RIcon>
           </button>
 
-          <GridLayout
+          {/* <ResponsiveReactGridLayout
             className="layout"
-            layout={urlName!.map((name) => ({
-              i: name,
-              x: 4,
-              y: 0,
-              w: 1,
-              h: 2,
-            }))}
-            cols={12}
-            rowHeight={30}
+            rowHeight={120}
             width={1200}
           >
             {urlName!
               .map((name) => UrlListMap.get(name)!)
               .map((item, i) => (
-                <Icon
-                  key={i}
-                  icon={item.icon}
-                  name={item.name}
-                  backgroundColor={item.backgroundColor}
-                  url={item.url}
-                  isEdit={editable}
-                />
+                <div
+                  key={item.name}
+                  data-grid={{
+                    i: i.toString(),
+                    x: i * 2,
+                    y: 0,
+                    w: 2,
+                    h: 2,
+                  }}
+                >
+                  <Icon
+                    icon={item.icon}
+                    name={item.name}
+                    backgroundColor={item.backgroundColor}
+                    url={item.url}
+                    isEdit={editable}
+                  />
+                </div>
               ))}
-          </GridLayout>
+          </ResponsiveReactGridLayout> */}
+          {urlName!
+            .map((name) => UrlListMap.get(name)!)
+            .map((item, i) => (
+              <Icon
+                icon={item.icon}
+                name={item.name}
+                backgroundColor={item.backgroundColor}
+                url={item.url}
+                key={item.name}
+                isEdit={editable}
+              />
+            ))}
         </div>
       </HomePageContext.Provider>
     </SearchLayout>
