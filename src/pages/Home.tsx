@@ -8,6 +8,7 @@ import styles from './Home.module.css'
 import { clsx } from '../utils/clsx'
 export const HomePage: FC = () => {
   const [backgroundLoad, setBgLoad] = useState(false)
+
   useEffect(() => {
     const image = new Image()
     image.src = 'https://api.paugram.com/wallpaper?source=gh'
@@ -24,6 +25,13 @@ export const HomePage: FC = () => {
           opacity: backgroundLoad ? 1 : 0,
         }}
       ></section>
+      {/* <button className={styles['winnower']}>
+        <img
+          src="/public/images/1.png"
+          alt=""
+          className="h-[150px] z-20 transform translate-y-8"
+        />
+      </button> */}
       <section className={styles['search']}>
         <SearchInput />
       </section>
