@@ -1,15 +1,15 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@ricons/antd': ^0.11.0
-  '@ricons/carbon': ^0.11.0
-  '@ricons/fa': ^0.11.0
-  '@ricons/fluent': ^0.11.0
-  '@ricons/ionicons4': ^0.11.0
-  '@ricons/ionicons5': ^0.11.0
-  '@ricons/material': ^0.11.0
-  '@ricons/tabler': ^0.11.0
-  '@ricons/utils': ^0.1.4
+  '@ricons/antd': 0.11.0
+  '@ricons/carbon': 0.11.0
+  '@ricons/fa': 0.11.0
+  '@ricons/fluent': 0.11.0
+  '@ricons/ionicons4': 0.11.0
+  '@ricons/ionicons5': 0.11.0
+  '@ricons/material': 0.11.0
+  '@ricons/tabler': 0.11.0
+  '@ricons/utils': 0.1.4
   '@types/react': 17.0.18
   '@types/react-dom': 17.0.9
   '@typescript-eslint/eslint-plugin': 4.29.2
@@ -26,8 +26,8 @@ specifiers:
   prettier: 2.3.2
   react: 17.0.2
   react-dom: 17.0.2
-  react-use: ^17.2.4
-  swr: ^0.5.6
+  react-use: 17.2.4
+  swr: 0.5.6
   tailwindcss: 2.2.7
   typescript: 4.3.5
   vite: 2.5.0
