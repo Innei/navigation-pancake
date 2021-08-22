@@ -15,7 +15,7 @@
 }
 .prefix-icon,
 .search-icon {
-  @apply absolute top-1/2 h-4 w-4;
+  @apply absolute top-1/2 h-4 w-4 cursor-pointer;
 
   transform: translateY(-50%);
 }
@@ -39,4 +39,32 @@
 
 .input-bar-wrap {
   position: relative;
+}
+
+.selector {
+  @apply absolute top-[3.2rem] left-[-1.5rem] overflow-hidden bg-white rounded-2xl;
+  @apply invisible opacity-0;
+
+  transform: scale(1, 0);
+  padding: 0.75em 0;
+  box-shadow: 0 0 5em rgba(0, 0, 0, 0.1);
+  transform-origin: top center;
+
+  &.active {
+    @apply opacity-100 visible;
+
+    transform: scale(1);
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+  }
+
+  & .item {
+    @apply cursor-pointer text-center;
+
+    transition: color 0.3s, background 0.3s;
+    padding: 0.5em 1em;
+
+    &:hover {
+      @apply bg-pink-200;
+    }
+  }
 }
