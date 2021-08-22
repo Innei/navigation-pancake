@@ -1,5 +1,5 @@
 .icons-wrap {
-  @apply m-auto text-center;
+  @apply m-auto text-center relative;
 }
 
 .search {
@@ -15,6 +15,10 @@
   z-index: -1;
   position: fixed;
   transition: opacity 0.5s;
+}
+
+.editable {
+  @apply absolute right-0 top-[-20px] h-[20px] w-[20px] p-4 box-content;
 }
 
 .winnower {
