@@ -10,7 +10,6 @@ export default defineConfig({
     tsconfigPaths(),
     Checker({
       typescript: true,
-      // FIXME this is bug
       enableBuild: true,
     }),
   ],

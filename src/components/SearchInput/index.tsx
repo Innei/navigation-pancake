@@ -4,6 +4,7 @@ import IosSearch from '@ricons/ionicons4/IosSearch'
 import styles from './index.module.css'
 import { clsx } from '../../utils/clsx'
 import { useLocalStorage } from 'react-use'
+import { STORAGE_PREFIX_KEY } from '../../constants'
 export enum SearchEngine {
   Google = 'Google',
   Bing = 'Bing',
@@ -11,7 +12,7 @@ export enum SearchEngine {
   Baidu = '百度',
   DuckDuckGo = 'DuckDuckGo',
 }
-const STORAGE_PREFIX_KEY = 'pancake-'
+
 export const SearchInput: FC = (props) => {
   const [value, setValue] = useState('')
 

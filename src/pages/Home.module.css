@@ -1,5 +1,5 @@
 .icons-wrap {
-  margin: auto;
+  @apply m-auto text-center;
 }
 
 .search {

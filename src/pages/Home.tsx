@@ -6,8 +6,17 @@ import { Icon } from '../components/Icon'
 import { SearchLayout } from '../layout/search-layout'
 import styles from './Home.module.css'
 import { clsx } from '../utils/clsx'
+import { useLocalStorage } from 'react-use'
+import { STORAGE_PREFIX_KEY } from '../constants'
+
+const UrlListMap = new Map(UrlList.map((item) => [item.name, item]))
+const UrlListAllName = UrlList.map((item) => item.name)
 export const HomePage: FC = () => {
   const [backgroundLoad, setBgLoad] = useState(false)
+  const [urlName, setUrlName] = useLocalStorage(
+    STORAGE_PREFIX_KEY + 'list',
+    UrlListAllName,
+  )
 
   useEffect(() => {
     const image = new Image()
@@ -36,17 +45,19 @@ export const HomePage: FC = () => {
         <SearchInput />
       </section>
       <div className={styles['icons-wrap']}>
-        {UrlList.map((item, i) => (
-          <Icon
-            {...{
-              key: i,
-              icon: item.icon,
-              name: item.name,
-              backgroundColor: item.backgroundColor,
-              url: item.url,
-            }}
-          />
-        ))}
+        {urlName!
+          .map((name) => UrlListMap.get(name)!)
+          .map((item, i) => (
+            <Icon
+              {...{
+                key: i,
+                icon: item.icon,
+                name: item.name,
+                backgroundColor: item.backgroundColor,
+                url: item.url,
+              }}
+            />
+          ))}
       </div>
     </SearchLayout>
   )
