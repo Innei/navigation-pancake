@@ -25,8 +25,8 @@
   "dependencies": {
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-grid-layout": "^1.2.5",
-    "react-resizable": "^3.0.4",
+    "react-grid-layout": "1.3.0",
+    "react-resizable": "3.0.4",
     "react-use": "17.2.4",
     "swr": "0.5.6"
   },
@@ -42,7 +42,7 @@
     "@ricons/utils": "0.1.4",
     "@types/react": "17.0.18",
     "@types/react-dom": "17.0.9",
-    "@types/react-grid-layout": "^1.1.2",
+    "@types/react-grid-layout": "1.1.2",
     "@typescript-eslint/eslint-plugin": "4.29.2",
     "@typescript-eslint/parser": "4.29.2",
     "@vitejs/plugin-react-refresh": "1.3.6",
